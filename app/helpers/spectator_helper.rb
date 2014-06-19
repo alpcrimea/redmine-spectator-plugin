@@ -1,0 +1,2 @@
+module SpectatorHelper
+end
