@@ -1,3 +1,7 @@
 = spectator
 
-Description goes here
+This plugin adds possibility for admin user switch into another user account
+
+Installation:
+
+ Just copy into plugins/spectator and restart redmine
