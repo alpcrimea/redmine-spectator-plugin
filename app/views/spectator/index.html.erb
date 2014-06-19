@@ -1,0 +1,10 @@
+<h2>Login as user</h2>
+<table>
+  <% @all_users.each_slice(10) do |users| %>
+    <tr>
+      <% users.each do |user| %>
+        <td><%= link_to user.login, {:action=>'change_user',:id=>user.id}, :method=>:get %></td>
+      <% end %>
+    </tr>
+  <% end %>
+</table>
