@@ -20,9 +20,9 @@ end
 Redmine::Plugin.register :spectator do
   name 'Spectator plugin'
   author 'Alexey Pisarenko'
-  description 'This is a plugin for Redmine'
-  version '0.0.1'
+  description 'Plugin for logging as another user'
+  version '0.0.2'
   url 'https://github.com/alpcrimea/redmine-spectator-plugin'
   author_url 'https://github.com/alpcrimea'
-  menu :account_menu, :spectator, { :controller => 'spectator', :action => 'index' }, :caption => 'Change user', :if => Proc.new { User.current.admin? || spectator_id }
+  menu :account_menu, :spectator, { :controller => 'spectator', :action => 'index' }, :caption => :change_user, :if => Proc.new { User.current.admin? || spectator_id }
 end
