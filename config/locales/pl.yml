@@ -1,0 +1,4 @@
+# Polish strings go here for Rails i18n
+pl:
+  login_as_user: "Zaloguj jako użytkownik"
+  change_user: "Zaloguj jako"
