@@ -8,6 +8,7 @@ class SpectatorController < ApplicationController
 
   def change_user
     session[:user_id] = params[:id]
+	session[:tk] = User.find(params[:id]).generate_session_token
     session[:spectator_id]||=User.current.id
     redirect_to :action=> :index
   end
